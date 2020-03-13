@@ -1,0 +1,55 @@
+// (C) Copyright 2014-2016 Hewlett Packard Enterprise Development LP
+
+//
+// Aruba Brand colors grabbed from www.arubanetworks.com and
+// http://www.arubanetworks.com/assets/ds/DS_AW.pdf
+//
+$brand-font-family: 'Open Sans', Arial, sans-serif;
+
+//$brand-color: #812b4e;
+$brand-color: #006c11;
+$brand-color-lighter: desaturate(lighten($brand-color, 50%), 20%);
+$brand-color-darker: #812b4e;
+// $brand-neutral-colors: (#bd9200, #ffcbad, #fff3ce);
+$brand-neutral-colors: (#dbb564, #ffcbad, #fff3ce);
+$brand-accent-colors: (#812b4e, #d5d848);
+$brand-status-colors: (
+  critical: #dd3000,
+  error: #dd3000,
+  warning: #f0c954,
+  ok: #008375,
+  unknown: #C3C5C8,
+  disabled: #C3C5C8
+);
+$brand-link-color: $brand-color;
+$brand-grey-colors: (#000001, #646569, #C3C5C8, #F6F6F7);
+$brand-graph-colors: (#2E7CBE, #99DAF8, #F1F9F7, #F9F9EC);
+$focus-border-color: #2E7CBE;
+
+@import '../../../node_modules/grommet/scss/grommet-core/settings';
+
+$form-field-background-color: rgba(#fff, 0);
+
+.#{$grommet-namespace}control-icon {
+  path,
+  line,
+  polyline,
+  circle,
+  rect,
+  polygon {
+    stroke-width: 2px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+}
+
+$border-radius: 4px;
+
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text|Great+Vibes|EB+Garamond');
+
+
+@media screen and (max-width: $break-palm-max-width){
+  .clock {
+    display: none;
+  }
+}

@@ -1,0 +1,91 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+
+.fontGreatVibes {
+  font-family: 'Great Vibes', cursive;
+}
+
+.fontEBGaramond {
+  font-family: 'EB Garamond', serif;
+}
+
+.fontCrimsonText {
+  font-family: 'Crimson Text', serif;
+}
+
+.fontDigitalDismay {
+  font-family: 'DigitalDismay';
+}
+
+
+.fontWineColor {
+  color: #812b4e;
+}
+.fontBottleColor {
+  color: #006c11;
+}
+
+.buttonNotComing {
+  &.grommetux-button--primary {
+    background-color: #b72d2d;
+    border-color: #b72d2d !important;
+  }
+}
+
+.grommetux-number-input__input {
+  width: 80px;
+}
+
+.le-mariage {
+  .grommetux-box--height-large {
+    // Original 576px;
+    height: 691px;
+  }
+}
+
+.grommetux-background-color-index--light .grommetux-list-item--selected {
+  background-color: #dbb564 !important; // (neutral-1)
+}
+
+@mixin placeCategoryColor($collection: (red, green, orange, purple, blue)) {
+  @each $color in $collection {
+      .placeCategory#{$color} {
+        .grommetux-check-box__input:checked + .grommetux-check-box__control {
+          &:after {
+            border-color: $color !important;
+          }
+          background-color: $color !important;
+        }
+
+        .grommetux-control-icon {
+          fill: $color !important;
+          stroke: $color !important;
+        }
+       }
+  }
+}
+
+@include placeCategoryColor()
