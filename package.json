@@ -13,7 +13,7 @@
     "firebase": "^4.1.1",
     "grommet": "^1.4.1",
     "i18next": "^8.4.3",
-    "lodash": "^4.17.4",
+    "lodash": "^4.17.13",
     "node-sass": "^4.5.3",
     "prop-types": "^15.5.10",
     "react": "^15.5.4",
